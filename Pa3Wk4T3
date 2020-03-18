@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main ()
+{   int userNum1,sum = 0, count=1, userNum2;
+    printf("This program will allow you to add numbers infinitely. To exit, get the sum and average enter 0\n");
+    printf("Enter your number: ");
+    scanf("%d", &userNum1);
+    if(userNum1 != 0)
+        {
+            printf("Enter a number you want to add: ");
+            scanf("%d", &userNum2);
+            while (userNum2 != 0)
+                 {
+                      count++;
+                    sum = userNum1 + userNum2;
+                    userNum2 = userNum1;
+                    userNum1 = sum;
+                    printf("And another one!: ");
+                    scanf("%d", &userNum2);
+                  }
+                 printf("Total Sum = %d\n", sum);
+                 printf("Average = %d", sum/count);
+                  }
+
+            else {
+                    printf("Invalid input");
+
+                }
+    return 0;
+}

@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main ()
+{
+   int userNum;
+   printf("Enter your number: ");
+   scanf("%d", &userNum);
+   while (userNum>=0)
+   {
+       printf("%d ",userNum);
+       userNum--;
+
+   }
+ return 0;
+}
